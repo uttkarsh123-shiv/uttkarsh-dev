@@ -19,7 +19,7 @@ const Second = () => {
           <p className="text-xl">More about me ——</p>
           <button onClick={() =>
             window.open(
-              "https://drive.google.com/file/d/1G8XmAmreJhqfdVNBblSePHZc3DOC2KFM/view?usp=drive_link",
+              "https://drive.google.com/file/d/1Cz9c6KIaHKGzPbBJcONJhFQXCSfJyfnY/view",
               "_blank"
             )
           } className=" cursor-pointer border-dotted border-1  p-6 pt-2 pb-2 rounded-full flex items-center">
