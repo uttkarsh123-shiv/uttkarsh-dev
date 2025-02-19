@@ -28,9 +28,20 @@ const Three = () => {
     };
   }, []);
 
+  // const changeColors = () => {
+  //   if (bgRef.current) {
+  //     bgRef.current.spheres.setColors([
+  //       0xffffff * Math.random(),
+  //       0xffffff * Math.random(),
+  //       0xffffff * Math.random(),
+  //     ]);
+  //     bgRef.current.spheres.light1.color.set(0xffffff * Math.random());
+  //   }
+  // };
+
   return (
-    <div className='absolute w-full h-full z--1 overflow-hidden' >
-      <canvas ref={canvasRef} id="webgl-canvas" className='absolute top-0 left-0 w-full h-full'  />
+    <div style={{ position: 'absolute', width: '100%', height: '100vh', zIndex:"-1", overflow:"hidden" }}>
+      <canvas ref={canvasRef} id="webgl-canvas" style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }} />
     </div>
   );
 };
