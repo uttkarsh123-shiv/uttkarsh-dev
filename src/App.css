@@ -68,6 +68,7 @@ body{
   font-family: "Josefin Slab", serif;
   font-optical-sizing: auto;
   font-style: normal;
+
 }
 .special-btn {
   width: 25vh;
@@ -222,5 +223,86 @@ transition: all 0.3s ease-in-out;
   /* font-size: 20px; */
   /* font-weight: bold; */
 /* } */ 
+
+
+
+/* responsive */
+.logo p{
+  font-size: clamp(20px, 2vw, 60px);
+}
+.hero-paragraph {
+  width: 38vw;
+  min-width: 300px; /* Ensures it doesn't shrink too much */
+  max-width: 1200px; /* Optional: Prevents it from becoming too wide */
+}
+.hero-paragraph p{
+  /* font-size: 1.5rem; 24px */
+/* line-height: 2rem; 32px */
+
+  font-size: clamp(20px, 1.5vw, 60px);
+  line-height: clamp(1em, 2vw,2em);
+}
+.hero-heading h1 {
+  font-size: clamp(64px, 8vw, 128px); /* Responsive size */ /* Ensure no extra spacing */
+  line-height: 1; /* Optimal spacing between lines */
+
+
+}
+
+
+@media screen and (max-width: 480px) {
+  .logo{
+    position: relative;
+    left: -40px;
+  }
+  .menu {
+    display: none;
+  }
+  .hero-paragraph {
+    width: 90vw;
+    /* background: #000; */
+    font-size:40px;
+  }
+  .hero-heading h1 {
+    position: relative;
+    font-size: 70px;
+    left: -18vh;
+    top:20vh;
+  }
+.tag{
+  font-size: 18px;
+  position:absolute;
+  top: 70vh;
+}
+
+.about{
+  height: 150vh;
+  /* background: #666464; */
+  .heading{
+    margin: 25px;
+  }
+  .content{
+    width: 90%;
+    margin-left: 25px;
+  }
+  .about-button{
+    margin-left:0px;
+    position: relative;
+    top:40%;
+    scale: 0.8;
+  }
+  .image-wrapper{
+    scale: 0.7;
+    margin:0;
+    left: 15%;
+    top:-13%;
+  }
+}
+.line{
+  position: relative;
+  top: 20%;
+}
+
+}
 
 

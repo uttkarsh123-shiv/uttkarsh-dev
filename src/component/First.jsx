@@ -10,9 +10,9 @@ const First = () => {
       <Three />
       <div className="nav flex p-9 justify-between">
         <div className="logo">
-          <p className="inria-sans-light ml-5">@by Uttkarsh</p>
+          <p className="inria-sans-light ml-5 text-clamp(2em,3em,4em)">@by Uttkarsh</p>
         </div>
-        <div className="absolute right-9 flex flex-col space-y-2 z-20">
+        <div className="menu absolute right-9 flex flex-col space-y-2 z-20">
           {["HOME", "ABOUT", "SKILL", "CONTACT"].map((item) => (
             <ul key={item}>
               <li
@@ -28,13 +28,14 @@ const First = () => {
       </div>
 
       <div className="hero w-[99vw] h-[82vh]">
-        <div className="hero-paragraph w-[78vh] ml-15 mt-8 text-2xl josefin-slab-normal">
-          <p>
-            A passionate frontend developer & problem solver, skilled in UI/UX,
-            animations, and full-stack projects. Enthusiastic about DSA and
-            building innovative Websites.
-          </p>
-        </div>
+     <div className="hero-paragraph ml-4 sm:ml-8 md:ml-12 lg:ml-15 mt-4 sm:mt-6 md:mt-8 josefin-slab-normal">
+  <p className="text-base sm:text-lg md:text-xl lg:text-2xl leading-relaxed">
+    A passionate frontend developer & problem solver, skilled in UI/UX,
+    animations, and full-stack projects. Enthusiastic about DSA and
+    building innovative Websites.
+  </p>
+</div>
+
 
         <div className="hero-heading inline-block p-2 relative left-[65vw] top-[20vh] instrument-serif-regular">
           <h1 className="m-0 text-[128px] leading-tight">Developer</h1>
